@@ -6,7 +6,7 @@ import CircularIndeterminate from '../CircularProgress'
 const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const BASE_URL = "https://northwind.vercel.app/api";
+  const BASE_URL = "https://northwind.vercel.app/api/customers";
 
   const getData = async (endpoint: string) => {
     try {

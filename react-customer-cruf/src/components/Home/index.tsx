@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const header = () => {
+const home = () => {
   return (
-    <header>
-        <nav className="navbar navbar-expand-lg  ">
+    <div>
+       <nav className="navbar navbar-expand-lg  ">
     <div className="container">
       
       <div className="collapse navbar-collapse" id="navbarText">
@@ -18,7 +18,7 @@ const header = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/customers">Customers List</Link>
+            <Link className="nav-link text-danger" style={{textDecoration:'underline'}} to="/customers">Customers List</Link>
           </li>
           {/* <li className="nav-item">
             <Link className="nav-link" to="">Favorites</Link>
@@ -28,12 +28,10 @@ const header = () => {
       </div>
     </div>
   </nav>
-  <div>
-    <hr />
-    <p style={{textAlign:'center', marginTop:'190px', fontSize: '50px'}}>This is Home Page</p>
-  </div>
-  </header>
+      <p style={{ textAlign: 'center', marginTop: '190px', fontSize: '50px' }}>This is Home Page</p>
+    </div>
+
   )
 }
 
-export default header
+export default home

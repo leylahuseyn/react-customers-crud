@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './components/Home'
-import AddCustomer from './components/AddCustomer'
-import CustomerList from './components/CustomerList'
+import CustomerList from "./components/CustomerList";
+import AddCustomer from "./components/AddCustomer";
 
 function App() {
  
